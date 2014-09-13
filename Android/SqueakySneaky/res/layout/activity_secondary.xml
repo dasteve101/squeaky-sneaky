@@ -6,23 +6,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".HomeActivity" >
-    
-    <ImageView
-        android:id="@+id/homeImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/logo" >
-    </ImageView>
+    tools:context="com.example.squeakysneaky.SecondaryActivity" >
 
-    <Button
-        android:id="@+id/homeButton1"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Get Started!" />
+        android:text="You are now chatting with your friend Daniel. Well... aren't you going to say hi?" />
+    
+    <EditText
+        android:id="@+id/homeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text..."
+        android:layout_alignParentBottom="true"
+        android:imeOptions="actionDone"
+        android:singleLine="true" />
 
 </RelativeLayout>

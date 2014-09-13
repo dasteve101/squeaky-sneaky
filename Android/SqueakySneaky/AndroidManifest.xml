@@ -6,21 +6,32 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon2"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait" >
         <activity
-            android:name="com.example.squeakysneaky.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondaryActivity"
+            android:label="@string/title_activity_secondary"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.squeakysneaky.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.squeakysneaky.HomeActivity" >     
+            </meta-data>
         </activity>
     </application>
 
